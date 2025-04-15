@@ -79,7 +79,7 @@ export default function Home({navigation}) {
                         </View>
                     </TouchableOpacity>
                 </View>
-                <View style={globalStyles.mt10ForContainer}>
+                <View style={styles.offerCardListContainer}>
                     <FlatList
                         ref={flatListRef}
                         data={OffersData}
@@ -91,13 +91,13 @@ export default function Home({navigation}) {
                         renderItem={({item}) => <OfferCard offer={item} />}
                     />
                 </View>
-                <View style={globalStyles.mt10ForContainer}>
+                <View style={styles.greetingTextContainer}>
                     <Text style={styles.greetingText}>Hi Vinayak!</Text>
                     <Text style={styles.getStartedGreetingText}>
                         Let's get started for NEET with SmartOnlineExam
                     </Text>
                 </View>
-                <View style={globalStyles.mt10ForContainer}>
+                <View style={styles.homeActivityButtonListContainer}>
                     <FlatList
                         data={HomeActivityButtonData}
                         horizontal={true}
@@ -109,11 +109,11 @@ export default function Home({navigation}) {
                         )}
                     />
                 </View>
-                <View style={globalStyles.mt10ForContainer}>
+                <View style={styles.myCoursesTextContainer}>
                     <Text style={styles.greetingText}>My Courses</Text>
                 </View>
 
-                <View style={globalStyles.mt10ForContainer}>
+                <View style={styles.courseTypeSelectorButtonListContainer}>
                     <FlatList
                         data={CoursesTypeData}
                         horizontal={true}
@@ -134,7 +134,7 @@ export default function Home({navigation}) {
                         )}
                     />
                 </View>
-                <View style={globalStyles.mt10ForContainer}>
+                <View style={styles.courseCardListContainer}>
                     <FlatList
                         data={visibleCourses}
                         horizontal={false}
@@ -151,17 +151,17 @@ export default function Home({navigation}) {
                         />
                     )}
                 </View>
-                <View style={globalStyles.mt10ForContainer}>
+                <View style={styles.continueWhereYouLeftTextContainer}>
                     <Text style={styles.greetingText}>
                         Continue where you left
                     </Text>
                 </View>
 
                 <View style={styles.basicPlanContainer}>
-                    <Text style={globalStyles.whiteBoldText}>
+                    <Text style={styles.whiteBoldText}>
                         Join SmartOnlineExam
                     </Text>
-                    <Text style={globalStyles.whiteBoldText}>
+                    <Text style={styles.whiteBoldText}>
                         Premium Plans starting at INR 50/month
                     </Text>
                     <CommonButton
@@ -201,7 +201,7 @@ export default function Home({navigation}) {
                         </View>
                     </View>
                 </View>
-                <View style={globalStyles.mt10ForContainer}>
+                <View style={styles.studyPackageContainer}>
                     <Text style={styles.greetingText}>Study Package</Text>
                 </View>
                 <View>
@@ -216,7 +216,7 @@ export default function Home({navigation}) {
                         )}
                     />
                 </View>
-                <View style={globalStyles.mt10ForContainer}>
+                <View style={styles.otherOptionTextContainer}>
                     <Text style={styles.greetingText}>Other Options</Text>
                 </View>
                 <View>
@@ -252,6 +252,9 @@ const styles = StyleSheet.create({
     tabButtonText: {
         color: 'black',
         fontSize: 16,
+    },
+    otherOptionTextContainer:{
+        marginTop:10,
     },
     buttonIconTextContainer: {
         flexDirection: 'row',
@@ -339,5 +342,33 @@ const styles = StyleSheet.create({
         marginTop: 10,
         paddingLeft: 10,
     },
-    uniqueStreakTextContainer: {},
+    greetingTextContainer: {
+        marginTop:10,
+    },
+    studyPackageContainer: {
+        marginTop:10,
+    },
+    whiteBoldText:{
+        color:'white',
+        fontWeight:'bold',
+    },
+    offerCardListContainer:{
+        marginTop:10,
+    },
+    homeActivityButtonListContainer: {
+        marginTop:10,
+    },
+    continueWhereYouLeftTextContainer: {
+        marginTop:10,
+    },
+    courseCardListContainer: {
+        marginTop:10,
+    },
+    courseTypeSelectorButtonListContainer:{
+        marginTop:10,
+    },
+    myCoursesTextContainer: {
+        marginTop: 10,
+    },
+
 });

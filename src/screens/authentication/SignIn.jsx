@@ -12,10 +12,11 @@ import {
   TouchableWithoutFeedback,
   View,
 } from 'react-native';
-import { EmailInput, PasswordInput } from './Inputs';
+import { EmailInput, PasswordInput } from './InputFields';
 import { useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import {ApplicationRoutes} from '../../constants/Routes';
+import { FacebookIcon, GoogleIcon, GraduationHatIcon, MobilePhoneIcon } from '../../constants/ImagesAndIcons'
 
 export default function SignIn() {
   const navigation = useNavigation();
@@ -51,7 +52,7 @@ export default function SignIn() {
             <View style={styles.hatIconContainer}>
               <Image
                   style={styles.graduationHatIcon}
-                  source={require('../../assets/icons/hat-graduation-svgrepo-com.png')}
+                  source={GraduationHatIcon}
               />
             </View>
 
@@ -59,7 +60,7 @@ export default function SignIn() {
               <Pressable style={styles.otpLoginButton}>
                 <Image
                     style={styles.otpLoginIcon}
-                    source={require('../../assets/icons/mobile-phone-svgrepo-com.png')}
+                    source={MobilePhoneIcon}
                 />
                 <Text style={styles.otpLoginButtonText}>Login With Mobile</Text>
               </Pressable>
@@ -67,7 +68,7 @@ export default function SignIn() {
               <Pressable style={styles.googleLoginButton}>
                 <Image
                     style={styles.googleLoginIcon}
-                    source={require('../../assets/icons/google-color-svgrepo-com.png')}
+                    source={GoogleIcon}
                 />
                 <Text style={styles.googleLoginButtonText}>Login With Google</Text>
               </Pressable>
@@ -75,7 +76,7 @@ export default function SignIn() {
               <Pressable style={styles.facebookLoginButton}>
                 <Image
                     style={styles.facebookLoginIcon}
-                    source={require('../../assets/icons/facebook-2-logo-svgrepo-com.png')}
+                    source={FacebookIcon}
                 />
                 <Text style={styles.facebookLoginButtonText}>Login With Facebook</Text>
               </Pressable>

@@ -3,7 +3,6 @@ import {View, Text, FlatList, StyleSheet, ImageBackground} from 'react-native';
 import {Button} from 'react-native-paper';
 import PackagePlanCard from '../components/PackagePlanCard';
 import CouponSection from '../components/CouponSection';
-import {globalStyles} from '../../global/GlobalStyles';
 import CouponsBottomSheet from './bottomsheets/CouponsBottomSheet';
 import {plans} from '../../constants/UIData';
 import {InfiniteStarsBackgroundImage} from '../../constants/ImagesAndIcons';
@@ -33,7 +32,7 @@ export default function PricingPlans() {
                 <CouponSection
                     openBottomSheetFunction={openCouponsBottomSheet}
                 />
-                <View style={[globalStyles.mt10ForContainer]}>
+                <View style={styles.packagePlanCardListContainer}>
                     <FlatList
                         data={plans}
                         keyExtractor={item => item.id}
@@ -52,7 +51,7 @@ export default function PricingPlans() {
                         {plans.find(p => p.id === selectedPlan)?.duration} plan
                     </Text>
                     <Button
-                        mode="contained"
+                        mode='contained'
                         style={styles.payButton}
                         onPress={() => {}}>
                         Proceed to Pay
@@ -75,6 +74,9 @@ const styles = StyleSheet.create({
     infinityBackgroundImage: {
         width: '100%',
         height: 180,
+    },
+    packagePlanCardListContainer:{
+        marginTop:10,
     },
     packageHeadlineContainer: {
         marginTop: 30,

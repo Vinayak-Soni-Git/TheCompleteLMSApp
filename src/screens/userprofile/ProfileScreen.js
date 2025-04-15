@@ -4,9 +4,12 @@ import {TabView, TabBar} from 'react-native-tab-view';
 import Analysis from './Analysis';
 import MyActivity from './MyActivity';
 import {VinayakAvatarImage} from '../../constants/ImagesAndIcons';
+import { ApplicationRoutes } from '../../constants/Routes'
+import { useNavigation } from '@react-navigation/native'
 
 export default function ProfileScreen() {
     const layout = useWindowDimensions();
+    const navigation = useNavigation();
     const [index, setIndex] = useState(0);
     const [routes] = useState([
         {key: 'analysis', title: 'Analysis'},
@@ -50,8 +53,8 @@ export default function ProfileScreen() {
                 </View>
             </View>
             <View style={styles.editProfileUpgradeButtonContainer}>
-                <Pressable style={styles.editProfileButton}>
-                    <Text>Edit Profile</Text>
+                <Pressable onPress={()=>navigation.navigate(ApplicationRoutes.UserProfileAndSettingsScreen)} style={styles.editProfileButton}>
+                    <Text>Profile</Text>
                 </Pressable>
                 <Pressable style={styles.upgradeButton}>
                     <Text>Upgrade</Text>

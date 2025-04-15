@@ -1,7 +1,15 @@
-import {ExploreIcon, MoneyIcon, ShareIcon, TelephoneIcon} from './ImagesAndIcons';
+import {
+    AndroidColorIcon, BullsEyesFocusIcon, BusinessIcon, ChevronRankIcon, CodingIcon, DiscountPercentIcon,
+    ExploreIcon, HourGlassNotDoneIcon, IOSBlackIcon, JavaIcon,
+    JavascriptIcon, KotlinIcon,
+    LinuxIcon, MechanicalIcon,
+    MoneyIcon, PencilIcon,
+    ShareIcon, StopwatchIcon, SwitchSliderIcon,
+    TelephoneIcon, WritingEducationLearningPencil,
+} from './ImagesAndIcons';
 
 export const AllCourses = [
-    {id:1, title:'Indian Polity for UPSC CSE', type:'GS Subjects', poster:'https://wallpapers.com/images/hd/white-on-brown-upsc-logo-j91ecwuodhb9p2cc.jpg',},
+    {id:1, title:'Indian Polity for UPSC CSE', type:'GS Subjects', poster:'https://wallpapers.com/images/hd/white-on-brown-upsc-logo-j91ecwuodhb9p2cc.jpg'},
     {id:2, title:'Crash Course for UPSC Aspirants', type:'Quick Revision', poster:'https://wallpapers.com/images/hd/white-on-brown-upsc-logo-j91ecwuodhb9p2cc.jpg'},
     {id:3, title:'CSAT Preparation', type:'GS Subject', poster:'https://wallpapers.com/images/hd/white-on-brown-upsc-logo-j91ecwuodhb9p2cc.jpg'},
     {id:4, title:'Geography for UPSC CSE', type:'GS Subject', poster:'https://wallpapers.com/images/hd/white-on-brown-upsc-logo-j91ecwuodhb9p2cc.jpg'},
@@ -28,8 +36,8 @@ export const AllCourses = [
     {id:25, title:'History for UPSC CSE', type:'GS Subjects', poster:'https://wallpapers.com/images/hd/white-on-brown-upsc-logo-j91ecwuodhb9p2cc.jpg'},
     {id:26, title:'1 Year Preparation for UPSC CSE', type:'Guidance', poster:'https://wallpapers.com/images/hd/white-on-brown-upsc-logo-j91ecwuodhb9p2cc.jpg'},
     {id:27, title:'Current Affairs & Hindu Analysis:Daily, Weekly & Monthly', type:'GS Subjects', poster:'https://wallpapers.com/images/hd/white-on-brown-upsc-logo-j91ecwuodhb9p2cc.jpg'},
-    {id:28, title:'Lucent for GK', type:'Reference Books', poster:'https://wallpapers.com/images/hd/white-on-brown-upsc-logo-j91ecwuodhb9p2cc.jpg'}
-]
+    {id:28, title:'Lucent for GK', type:'Reference Books', poster:'https://wallpapers.com/images/hd/white-on-brown-upsc-logo-j91ecwuodhb9p2cc.jpg'},
+];
 
 export const CoursesTypeData = [
     {id:1, courseTypeName:'All Courses'},
@@ -46,7 +54,7 @@ export const HomeActivityButtonData = [
     {id:1, title:'Watch a Video', iconName:'video'},
     {id:2, title:'Take a Practice Test', iconName: 'checklist'},
     {id:3, title:'Explore courses', iconName: 'stack'},
-]
+];
 
 export const OffersData = [
     {
@@ -73,14 +81,14 @@ export const OffersData = [
         offerDescription:'Limited Time Offer',
         offerPoster:'https://th.bing.com/th/id/OIP.8hIsGYdx2VSYFNKvO5Zn5gHaFI?w=626&h=434&rs=1&pid=ImgDetMain',
     },
-]
+];
 
 export const OtherOptionsData = [
     {id:1, title:'SmartOnlineExam Pricing Plans', icon:MoneyIcon, iconColor:'green'},
     {id:2, title:'Contact Support', icon:TelephoneIcon, iconColor:'blue'},
     {id:3, title:'Explore Courses', icon:ExploreIcon, iconColor:'navy'},
     {id:4, title:'Earn INR 50 SmartOnlineExam Money', icon:ShareIcon, iconColor:'skyblue'},
-]
+];
 
 export const StudyPackagesData = [
     {id:1, title:'SmartOnlineExam Infinity Package for UPSC', poster:'https://wallpapers.com/images/hd/white-on-brown-upsc-logo-j91ecwuodhb9p2cc.jpg'},
@@ -88,15 +96,14 @@ export const StudyPackagesData = [
     {id:3, title:'GS Foundational + PSIR for UPSC 2024', poster:'https://wallpapers.com/images/hd/white-on-brown-upsc-logo-j91ecwuodhb9p2cc.jpg'},
     {id:4, title:'GS Foundational + Sociology for UPSC 2024', poster:'https://wallpapers.com/images/hd/white-on-brown-upsc-logo-j91ecwuodhb9p2cc.jpg'},
     {id:5, title:'GS Foundational for UPSC 2024(Pre & Mains)', poster:'https://wallpapers.com/images/hd/white-on-brown-upsc-logo-j91ecwuodhb9p2cc.jpg'},
-]
+];
 
 export const CouponsData = [
     {id:1, code:'STUDY100', saveUpto:100, expiringSoon:true},
     {id:2, code:'SOE200', saveUpto:200, expiringSoon:false},
     {id:3, code:'HOLI', saveUpto:50, expiringSoon:false},
     {id:4, code:'MARK100', saveUpto:100, expiringSoon:true},
-
-]
+];
 
 export const plans = [
     {id: '3months', duration: 'For 3 Months', validity: 'Valid till June 02, 2025', oldPrice: '₹1999', price: '₹649'},
@@ -107,8 +114,8 @@ export const plans = [
         validity: 'Valid till March 02, 2027',
         oldPrice: '₹4999',
         price: '₹1499',
-        bestValue: true
-    }
+        bestValue: true,
+    },
 ];
 export const myExamData = [
     {id:1, examName:'NEET'},
@@ -129,8 +136,8 @@ export const analysisCardData = [
         text:'Test attempted',
         iconContainerBgColor: '#113251',
         cardBorderColor:'#113251',
-        icon:require('../assets/icons/checklist-svgrepo-com.png')}
-]
+        icon:require('../assets/icons/checklist-svgrepo-com.png')},
+];
 
 export const analysisCard2Data = [
     {
@@ -146,71 +153,71 @@ export const analysisCard2Data = [
         text:'Longest Streak',
         iconContainerBgColor: '#F6CBA0',
         cardBorderColor:'#F6CBA0',
-        icon:require('../assets/icons/fire-svgrepo-com.png')}
-]
+        icon:require('../assets/icons/fire-svgrepo-com.png')},
+];
 
 export const testAnalysisCardsData = [
     {
         id:1,
         mainText:'Tests Attempted',
         secondaryText:'Total tests attempted by you',
-        icon:require('../assets/icons/writing-education-learning-pencil-note-write-svgrepo-com.png'),
+        icon:WritingEducationLearningPencil,
         value:1,
     },
     {
         id:2,
         mainText:'Total Attempted Questions',
         secondaryText:'Total questions attempted by you',
-        icon:require('../assets/icons/pencil-svgrepo-com.png'),
-        value:13
+        icon:PencilIcon,
+        value:13,
     },
     {
         id:3,
         mainText:'Total Tests Time',
         secondaryText:'Total test time taken by you',
-        icon:require('../assets/icons/hourglass-not-done-svgrepo-com.png'),
+        icon:HourGlassNotDoneIcon,
         value:29,
     },
     {
         id:4,
         mainText:'Average Time Per Question',
         secondaryText:'Average time taken by you to attempt a question',
-        icon:require('../assets/icons/stopwatch-svgrepo-com.png'),
+        icon:StopwatchIcon,
         value:2,
     },
     {
         id:5,
         mainText:'Average Rank',
         secondaryText:'Amount all other students in NEET',
-        icon:require('../assets/icons/chevron-rank-svgrepo-com.png'),
+        icon:ChevronRankIcon,
         value:52579,
     },
     {
         id:6,
         mainText:'Average Percentile',
         secondaryText:'26.31 students are scoring more than you',
-        icon:require('../assets/icons/discount-percent-svgrepo-com.png'),
+        icon:DiscountPercentIcon,
         value:73.69,
     },
     {
         id:7,
         mainText:'Average Accuracy',
         secondaryText:'You answered 5 questions correct out of 13',
-        icon:require('../assets/icons/bullseye-focus-svgrepo-com.png'),
+        icon:BullsEyesFocusIcon,
         value:38.46,
     },
     {
         id:8,
         mainText:'Correct : Incorrect',
         secondaryText:'Total correct and incorrect questions attempted by you',
-        icon:require('../assets/icons/switch-slider-svgrepo-com.png'),
+        icon:SwitchSliderIcon,
         value:'5:8',
-    }
-]
+    },
+];
 
 export const giftedBarChartData = [
     { value: 50, frontColor: '#EF5458' },
-    { value: 80, frontColor: '#113251' }
+    { value: 80, frontColor: '#113251' },
 ];
 
 export const giftedBarChartLegendData = [
@@ -230,3 +237,177 @@ export const giftedDotChartData = [
     { value: 90, label: 'D', dataPointColor: '#113251' },
 ];
 
+export const accordionsSubSections = [
+    {
+        id: 1,
+        title: 'RDSO Instructions for Exam',
+        description: '2 Attachments(s)',
+        items: [
+            {
+                id: '1-1',
+                text: 'Welcome Video',
+                subText: '5 mins',
+                type:'video',
+                locked:false,
+            },
+            {
+                id: '1-2',
+                text: 'Syllabus Overview',
+                subText: '3 mins',
+                type:'pdf',
+                locked:true,
+            },
+        ],
+    },
+    {
+        id: 2,
+        title: 'ALP Psycho Mock Test Detailed Video Solution',
+        description: '49 Attachment(s)',
+        items: [
+            {
+                id: '2-1',
+                text: 'Basic Components',
+                subText: '10 mins',
+                type:'video',
+                locked:true,
+            },
+        ],
+    },
+    {
+        id: 3,
+        title: 'Live Class (Interactive)',
+        description: '2 Attachments(s)',
+        items: [
+            {
+                id: '3-1',
+                text: 'Custom Hooks',
+                subText: '12 mins',
+                type:'test',
+                locked:false,
+            },
+        ],
+    },
+];
+
+export const faqsAccordionData = [
+    {
+        id: 1,
+        title: 'How can i enroll in a course?',
+        item: [
+            {
+                id: '1-1',
+                text: 'Enrolling in a course is simple! just browse through our website, select the course' +
+                    'you are intersted in, and click on the "Enroll Now" button. Follow the propmpts to complete' +
+                    'the enrollment process, and you will gain immediate acess to the course materials ',
+            },
+        ],
+    },
+    {
+        id: 2,
+        title: 'Can i access the course materials on any device?',
+        item: [
+            {
+                id: '1-2',
+                text: 'Enrolling in a course is simple! just browse through our website, select the course' +
+                    'you are intersted in, and click on the "Enroll Now" button. Follow the propmpts to complete' +
+                    'the enrollment process, and you will gain immediate acess to the course materials ',
+            },
+        ],
+    },
+    {
+        id: 3,
+        title: 'How can i access the course materials?',
+        item: [
+            {
+                id: '1-3',
+                text: 'Enrolling in a course is simple! just browse through our website, select the course' +
+                    'you are intersted in, and click on the "Enroll Now" button. Follow the propmpts to complete' +
+                    'the enrollment process, and you will gain immediate acess to the course materials ',
+            },
+        ],
+    },
+    {
+        id: 4,
+        title: 'Can i interact with the instructor during the course?',
+        item: [
+            {
+                id: '1-4',
+                text: 'Enrolling in a course is simple! just browse through our website, select the course' +
+                    'you are intersted in, and click on the "Enroll Now" button. Follow the propmpts to complete' +
+                    'the enrollment process, and you will gain immediate acess to the course materials ',
+            },
+        ],
+    },
+];
+
+export const tabBarSections = [
+    { key: 'overview', title: 'Overview' },
+    { key: 'highlights', title: 'Key Highlights' },
+    { key: 'modules', title: 'Modules' },
+    { key: 'faqs', title: 'FAQs' },
+    { key: 'creator', title: 'About The Creator' },
+];
+
+
+
+export const indiaStates = [
+    'Andhra Pradesh',
+    'Arunachal Pradesh',
+    'Assam',
+    'Bihar',
+    'Chhattisgarh',
+    'Goa',
+    'Gujarat',
+    'Haryana',
+    'Himachal Pradesh',
+    'Jharkhand',
+    'Karnataka',
+    'Kerala',
+    'Madhya Pradesh',
+    'Maharashtra',
+    'Manipur',
+    'Meghalaya',
+    'Mizoram',
+    'Nagaland',
+    'Odisha',
+    'Punjab',
+    'Rajasthan',
+    'Sikkim',
+    'Tamil Nadu',
+    'Telangana',
+    'Tripura',
+    'Uttar Pradesh',
+    'Uttarakhand',
+    'West Bengal',
+    'Andaman and Nicobar Islands',
+    'Chandigarh',
+    'Dadra and Nagar Haveli and Daman and Diu',
+    'Delhi',
+    'Jammu and Kashmir',
+    'Ladakh',
+    'Lakshadweep',
+    'Puducherry',
+];
+
+export const programmingCourses = [
+    {id:1, title:'The Complete Android Development Course', poster:AndroidColorIcon, instructor:'Vinayak Soni', price:1199},
+    {id:2, title:'The Complete Linux OS Course', poster:LinuxIcon, instructor: 'Vinayak Soni', price:499},
+    {id:3, title:'The Complete Javascript Course', poster:JavascriptIcon, instructor: 'Vinayak Soni',price:599},
+    {id:4, title:'The Complete IOS Development Course', poster:IOSBlackIcon, instructor: 'Vinayak Soni', price:999},
+    {id:5, title:'The Complete Java Development Course', poster:JavaIcon, instructor: 'Vinayak Soni', price:599},
+    {id:6, title:'The Complete Kotlin Development Masterclass', poster:KotlinIcon, instructor: 'Vinayak Soni', price:899},
+];
+
+export const courseCategories = [
+    {id:1, categoryName:'Programming', totalCourses:10, poster:CodingIcon},
+    {id:2, categoryName:'Mechanical', totalCourses:6, poster:MechanicalIcon},
+    {id:3, categoryName:'Business', totalCourses:4, poster:BusinessIcon},
+];
+
+export const countriesCode = [
+  { 'name': 'India', 'code': 'IN', 'dial_code': '+91', 'flag': '🇮🇳' },
+  { 'name': 'United States', 'code': 'US', 'dial_code': '+1', 'flag': '🇺🇸' },
+  { 'name': 'United Kingdom', 'code': 'GB', 'dial_code': '+44', 'flag': '🇬🇧' },
+  { 'name': 'Canada', 'code': 'CA', 'dial_code': '+1', 'flag': '🇨🇦' },
+  { 'name': 'Australia', 'code': 'AU', 'dial_code': '+61', 'flag': '🇦🇺' },
+];

@@ -21,24 +21,24 @@ export default function DrawerNavigatorContent(props) {
         <View style={styles.container}>
             <DrawerContentScrollView {...props}>
                 <View style={styles.avatarContainer}>
-                    <FontAwesome5 name='book' size={50}/>
+                    <FontAwesome5 name={'book'} size={50}/>
                     <View style={styles.userDetailsContainer}>
                         <Text style={styles.userVision}>Vision</Text>
                         <Text style={styles.upgradeButton}>Upgrade</Text>
                     </View>
 
                 </View>
-                <DrawerItem labelStyle={styles.drawerItemLabel} label='Explore Courses' icon={({color, size}) => (
-                    <FontAwesome5 name='map' size={28}/>
+                <DrawerItem labelStyle={styles.drawerItemLabel} label={'Explore Courses'} icon={({color, size}) => (
+                    <FontAwesome5 name={'map'} size={28}/>
                 )}/>
-                <DrawerItem onPress={()=>navigation.navigate(ApplicationRoutes.PricingPlansScreen)} labelStyle={styles.drawerItemLabel} label='Pricing Plans' icon={({color, size}) => (
-                    <Entypo name='price-tag' size={28}/>
+                <DrawerItem onPress={()=>navigation.navigate(ApplicationRoutes.PricingPlansScreen)} label='Pricing Plans' labelStyle={styles.drawerItemLabel}  icon={({color, size}) => (
+                    <Entypo name={'price-tag'} size={28}/>
                 )}/>
-                <DrawerItem onPress={openShareAndEarnSheet} labelStyle={styles.drawerItemLabel} label='Share & Earn' icon={({color, size}) => (
-                    <FontAwesome5 name='share-alt' size={28}/>
+                <DrawerItem onPress={openShareAndEarnSheet} label={'Refer & Earn'} labelStyle={styles.drawerItemLabel} icon={({color, size}) => (
+                    <FontAwesome5 name={'share-alt'} size={28}/>
                 )}/>
-                <DrawerItem labelStyle={styles.drawerItemLabel} label='Change Exam' icon={({color, size}) => (
-                    <FontAwesome5 name='exchange-alt' size={28}/>
+                <DrawerItem labelStyle={styles.drawerItemLabel} label={'Change Exam'} icon={({color, size}) => (
+                    <FontAwesome5 name={'exchange-alt'} size={28}/>
                 )}/>
                 <DrawerItem labelStyle={styles.drawerItemLabel} label='Classes' icon={({color, size}) => (
                     <MaterialCommunityIcons name='google-classroom' size={28}/>

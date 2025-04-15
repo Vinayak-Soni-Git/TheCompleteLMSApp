@@ -13,13 +13,13 @@ import {
   FirstNameInput,
   LastNameInput,
   SetPasswordInput,
-} from './Inputs';
+} from './InputFields';
 import React, {useRef, useState} from 'react';
 import {useNavigation} from '@react-navigation/native';
 import {ApplicationRoutes} from '../../constants/Routes';
 import {GraduationHatIcon} from '../../constants/ImagesAndIcons';
 
-export default function CreateAccount() {
+export default function CreateAccountScreen() {
   const navigation = useNavigation();
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');

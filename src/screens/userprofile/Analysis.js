@@ -66,55 +66,55 @@ export default function Analysis() {
                         <Text style={styles.exploreAllButtonText}>Explore All</Text>
                     </Pressable>
                 </View>
-                <View style={globalStyles.mt10ForContainer}>
+                <View style={styles.MyExamCardFlatListContainer}>
                     <FlatList
                         data={myExamData}
-                        keyExtractor={(item, index) => index.toString()}
+                        keyExtractor={(index) => index.toString()}
                         renderItem={({item}) => (
                             <MyExamCard exam={item}/>
                         )}/>
                 </View>
 
                 <View >
-                    <View style={globalStyles.mt10ForContainer}>
+                    <View style={styles.TestQuestionsAnalysisTextContainer}>
                         <Text style={styles.myExamsText}>Test Questions Analysis</Text>
                     </View>
 
                     <GiftedDonutChart />
 
-                    <View style={globalStyles.mt10ForContainer}>
+                    <View style={styles.changeOfScoreTextContainer}>
                         <Text style={styles.myExamsText}>Change of score with each test</Text>
                     </View>
                     <GiftedDotChart />
 
-                    <View style={globalStyles.mt10ForContainer}>
+                    <View style={styles.headingWithPaddingText}>
                         <Text style={styles.myExamsText}>Change of Percentile & Accuracy with each test</Text>
                     </View>
 
                     <GiftedBarChart />
                 </View>
 
-                <View style={globalStyles.mt10ForContainer}>
+                <View style={styles.headingWithPaddingText}>
                     <Text style={styles.myExamsText}>Learning Analysis</Text>
                 </View>
-                <View style={globalStyles.mt10ForContainer}>
+                <View style={styles.headingWithPaddingText}>
                     <View style={styles.videosViewedTestAttemptedCardsContainer}>
-                        {analysisCardData.map((item, index) => (
+                        {analysisCardData.map((item) => (
                             <LearningAnalysisCard item={item}/>
                         ))}
                     </View>
-                    <View style={[styles.totalLearningTimeStreakContainer, globalStyles.mt10ForContainer]}>
-                        {analysisCard2Data.map((item, index) => (
+                    <View style={[styles.totalLearningTimeStreakContainer, { marginTop:10 }]}>
+                        {analysisCard2Data.map((item) => (
                             <LearningAnalysisCard2 item={item}/>
                         ))}
                     </View>
-                    <View styles={globalStyles.mt10ForContainer}>
+                    <View styles={styles.headingWithPaddingText}>
                         <Pressable style={styles.viewDetailedAnalysisButton}>
                             <Text style={styles.viewDetailedAnalysisButtonText}>View Your Detailed Analysis</Text>
                         </Pressable>
                     </View>
                 </View>
-                <View style={globalStyles.mt10ForContainer}>
+                <View style={styles.testAnalysisTextContainer}>
                     <Text style={styles.myExamsText}>Test Analysis</Text>
                 </View>
 
@@ -126,14 +126,14 @@ export default function Analysis() {
                     </View>
                     <Text style={styles.notAttemptedText}>You haven't attempted any Tests</Text>
                     <Text style={styles.notAttemptedText}>Click below to see all available Unattempted Tests</Text>
-                    <Pressable style={[styles.attemptATestButton, globalStyles.mt10ForContainer]}>
+                    <Pressable style={[styles.attemptATestButton, {marginTop:10}]}>
                         <Text style={styles.attemptATestButtonText}>Attempt a Test</Text>
                     </Pressable>
                 </View>
-                <View style={globalStyles.mt10ForContainer}>
+                <View style={styles.headingWithPaddingText}>
                     <Text style={styles.myExamsText}>Insights</Text>
                 </View>
-                <View style={globalStyles.mt10ForContainer} >
+                <View style={styles.theGoodToImproveSummaryTextContainer} >
                     <Text style={styles.theGoodText} >The Good</Text>
                     <View style={styles.improveInstructionsContainer} >
                         <Text style={styles.instructionBulletPoint} >{'\u2022'}</Text>
@@ -166,7 +166,7 @@ export default function Analysis() {
                         </View>
                         <Image style={styles.piggyBankIcon} source={PiggyBankIcon} />
                     </View>
-                    <Pressable style={[styles.attemptATestButton, globalStyles.mt10ForContainer]}>
+                    <Pressable style={[styles.attemptATestButton, {marginTop:10}]}>
                         <Text style={styles.attemptATestButtonText}>Apply</Text>
                     </Pressable>
                 </View>
@@ -198,7 +198,7 @@ export default function Analysis() {
                 </View>
             </ScrollView>
         </View>
-    )
+    );
 }
 
 const styles = StyleSheet.create({
@@ -353,4 +353,23 @@ const styles = StyleSheet.create({
         marginTop: 10,
         paddingLeft: 10,
     },
-})
+    MyExamCardFlatListContainer:{
+        marginTop:10,
+    },
+    TestQuestionsAnalysisTextContainer:{
+        marginTop:10,
+    },
+    changeOfScoreTextContainer:{
+        marginTop:10,
+    },
+    theGoodToImproveSummaryTextContainer:{
+        marginTop:10,
+    },
+    testAnalysisTextContainer:{
+        marginTop:10,
+    },
+    headingWithPaddingText:{
+        marginTop:10,
+    },
+
+});

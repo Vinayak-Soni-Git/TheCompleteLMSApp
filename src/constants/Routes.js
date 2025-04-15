@@ -11,4 +11,9 @@ export const ApplicationRoutes = {
     Home:'Home',
     ProfileScreen:'ProfileScreen',
     PricingPlansScreen:'PricingPlansScreen',
+    CoursesListScreen:'CoursesListScreen',
+    CourseDetailsScreen:'CourseDetailsScreen',
+    UserProfileAndSettingsScreen:'UserProfileScreen',
+    EditProfileScreen:'EditProfileScreen',
+
 };

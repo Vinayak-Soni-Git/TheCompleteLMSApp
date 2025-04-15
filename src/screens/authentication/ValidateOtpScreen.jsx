@@ -3,6 +3,7 @@ import {Image, Pressable, StyleSheet, Text, View, ActivityIndicator, Alert} from
 import { OtpInput } from 'react-native-otp-entry';
 import { useNavigation } from '@react-navigation/native';
 import {ApplicationRoutes} from '../../constants/Routes';
+import { PersonProtectionIcon } from '../../constants/ImagesAndIcons'
 
 export default function ValidateOtpScreen() {
     const [otp, setOtp] = useState('');
@@ -22,11 +23,10 @@ export default function ValidateOtpScreen() {
             setLoading(false);
             setVerified(true);
 
-            // Navigate after 1.5 seconds
             setTimeout(() => {
                 navigation.navigate(ApplicationRoutes.CreateAccount);
             }, 1500);
-        }, 2000); // Simulate API call
+        }, 2000);
     };
 
     return (
@@ -38,7 +38,7 @@ export default function ValidateOtpScreen() {
             <View style={styles.protectionIconContainer}>
                 <Image
                     style={styles.protectionIcon}
-                    source={require('../../assets/icons/person-protection-security-svgrepo-com.png')}
+                    source={PersonProtectionIcon}
                 />
             </View>
 
@@ -52,7 +52,7 @@ export default function ValidateOtpScreen() {
                     numberOfDigits={6}
                     focusColor={'black'}
                     focusStickBlinkingDuration={400}
-                    onTextChange={setOtp} // Capture OTP input
+                    onTextChange={setOtp}
                 />
             </View>
 
@@ -61,9 +61,9 @@ export default function ValidateOtpScreen() {
                     onPress={handleVerifyOtp}
                     style={[
                         styles.loginButton,
-                        verified && styles.verifiedButton, // Apply new style if verified
+                        verified && styles.verifiedButton,
                     ]}
-                    disabled={loading || verified} // Disable after verification
+                    disabled={loading || verified}
                 >
                     {loading ? (
                         <ActivityIndicator size='small' color='white' />
@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
     },
     verifiedButton: {
-        backgroundColor: '#4CAF50', // Green color after OTP is verified
+        backgroundColor: '#4CAF50',
     },
     loginButtonText: {
         fontSize: 17,

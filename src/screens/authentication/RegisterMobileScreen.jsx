@@ -1,5 +1,5 @@
 import {ActivityIndicator, Alert, Animated, Image, Pressable, StyleSheet, Text, View} from 'react-native';
-import {UserMobileNumberInput} from './Inputs';
+import {UserMobileNumberInput} from './InputFields';
 import {useRef, useState} from 'react';
 import {useNavigation} from '@react-navigation/native';
 import {ApplicationRoutes} from "../../constants/Routes";

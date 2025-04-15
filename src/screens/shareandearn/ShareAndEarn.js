@@ -43,7 +43,7 @@ const ShareAndEarn = ({visible, onClose}) => {
     <Modal
       transparent
       visible={visible}
-      animationType="none"
+      animationType='none'
       onRequestClose={onClose}>
       <TouchableWithoutFeedback>
         <View style={styles.container}>
